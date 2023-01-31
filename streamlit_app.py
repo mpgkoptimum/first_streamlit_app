@@ -58,7 +58,11 @@ streamlit.text("The fruit load list contains:")
 #streamlit.text(my_data_row)
 streamlit.dataframe(my_data_row)
 #allow enduser to add fruit to the list
-streamlit.text("The fruit load list contains:")
+
+add_my_fruit = streamlit.text_input('what fruit would you like to add??','jackfruit')
+streamlit.write('The user entered ', add_my_fruit)
+#streamlit.text("what fruit would you like to add?")
+
 
 
 
